@@ -13,7 +13,13 @@
     <div id="perimetre"></div>
     <div id="surface"></div>
     <script>
-        // Votre code JavaScript ici
+        let PI=Math.PI;
+        let rayon=Number(window.prompt("entrer le rayon du cercle :"));
+        let Périmètre=2*rayon*rayon;
+        let surface=PI*rayon*rayon;
+        document.getElementById("rayon").innerHTML=`Rayon : ${rayon} cm`;
+        document.getElementById("perimetre").innerHTML=`Périmètre  ${Périmètre.toFixed(2)} cm`;
+        document.getElementById("surface").innerHTML=`Surface : ${surface.toFixed(2)} cm²`;
     </script>
 </body>
 
